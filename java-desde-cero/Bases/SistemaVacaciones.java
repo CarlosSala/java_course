@@ -13,7 +13,7 @@ public class SistemaVacaciones {
         System.out.println("¿Cual es tu nombre?");
         nombre = teclado.nextLine();
 
-        System.out.println("Clave de departamento: ");
+        System.out.println("Clave de departamento de 1 a 3: ");
         clave = teclado.nextInt();
 
         System.out.println("Antiguedad: ");
@@ -22,6 +22,7 @@ public class SistemaVacaciones {
         teclado.close();
 
         if (clave == 1) {
+
             if (antiguedad == 1) {
                 System.out.println(nombre + " tienes 6 dias de vacaciones");
             } else if (antiguedad >= 2 && antiguedad <= 6) {
@@ -31,6 +32,7 @@ public class SistemaVacaciones {
             }
 
         } else if (clave == 2) {
+
             if (antiguedad == 1) {
                 System.out.println(nombre + " tienes 7 dias de vacaciones");
             } else if (antiguedad >= 2 && antiguedad <= 6) {
@@ -50,4 +52,4 @@ public class SistemaVacaciones {
             }
         }
     }
-}	
+}

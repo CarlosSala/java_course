@@ -1,7 +1,7 @@
 public class Suma {
-	// metodo principal de la clase Suma
-	public static void main (String args[]){
-		
+
+	public static void main(String args[]) {
+
 		int num1 = 55, num2 = 12, result = 0;
 		result = num1 + num2;
 		System.out.println("Los valores son " + num1 + " y " + num2);
@@ -15,6 +15,6 @@ public class Suma {
 
 		int num1 = 24, num2 = 25;
 		int resultado = (num1 + num2) / 7 + num1 - num2;
-		System.out.println("el resultado es: "+ resultado);
+		System.out.println("el resultado es: " + resultado);
 	}
 }

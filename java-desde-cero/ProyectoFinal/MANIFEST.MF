@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Created-By: CarlosS
-Main-Class: ProyectoFinal
+Main-Class: PrimeraInterfaz
 X-COMMENT: Curso-java

@@ -8,15 +8,24 @@ public class Parseo extends JFrame implements ActionListener {
     private JLabel label1, label2, label3;
     private JButton button1;
 
-    // diseño o paso de parametros a los controles en el constructor 
+    public static void main(String args[]) {
+
+        Parseo formulario1 = new Parseo();
+        formulario1.setBounds(0, 0, 300, 180);
+        formulario1.setVisible(true);
+        formulario1.setResizable(false);
+        formulario1.setLocationRelativeTo(null);
+    }
+
+    // diseño o paso de parametros a los controles en el constructor
     public Parseo() {
 
         setLayout(null);
-        label1 = new JLabel("valor 1: ");
+        label1 = new JLabel("Valor 1: ");
         label1.setBounds(50, 5, 100, 30);
         add(label1);
 
-        label2 = new JLabel("valor 2: ");
+        label2 = new JLabel("Valor 2: ");
         label2.setBounds(50, 40, 100, 30);
         add(label2);
 
@@ -33,12 +42,12 @@ public class Parseo extends JFrame implements ActionListener {
         add(textField2);
 
         button1 = new JButton("Sumar");
-        button1.setBounds(10, 80, 100, 30);
+        button1.setBounds(20, 80, 80, 30);
         add(button1);
         button1.addActionListener(this);
     }
 
-    // logica 
+    // logica
     public void actionPerformed(ActionEvent evento) {
 
         if (evento.getSource() == button1) {
@@ -52,11 +61,4 @@ public class Parseo extends JFrame implements ActionListener {
         }
     }
 
-    public static void main(String args[]) {
-        Parseo formulario1 = new Parseo();
-        formulario1.setBounds(0, 0, 300, 150);
-        formulario1.setVisible(true);
-        formulario1.setResizable(false);
-        formulario1.setLocationRelativeTo(null);
-    }
 }

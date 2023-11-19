@@ -19,11 +19,12 @@ public class BidimensionalDynamicArray {
         int numeros[][] = new int[filas][columnas];
 
         for (int j = 0; j < filas; j++) {
+
             // se llena la fila 0 con las columnas
             for (int i = 0; i < columnas; i++) {
                 numeros[j][i] = contador;
                 contador++;
-                System.out.print(numeros[j][i]);
+                System.out.print(numeros[j][i] + " ");
             }
             // salto de linea para pasar a la fila siguiente
             System.out.println("");

@@ -1,7 +1,7 @@
 public class DoWhile {
   public static void main(String args[]) {
 
-    int i = 100000;
+    int i = 1000;
     do {
       System.out.print(i + " ");
       if (i > 0) {
